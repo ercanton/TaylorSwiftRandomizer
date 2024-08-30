@@ -1,0 +1,153 @@
+/*
+This is the design format setup
+*/
+
+* {
+	-fx-primary-color: rgb(185, 224, 255);
+	-fx-secondary-color: rgb(214, 235, 253);
+	-fx-focus-color: -fx-secondary-color;
+}
+
+.check-box .box {
+	-fx-background-color: white;
+	-fx-border-radius:3px; 
+}
+
+.check-box {
+	-fx-text-fill: grey;
+}
+	
+.check-box:selected .mark {
+	-fx-background-color: white;
+}
+
+.check-box:selected .box {
+	-fx-background-color: rgb(244, 163, 226);
+}
+
+.tab-header-area .tab-header-background {
+ 	-fx-background-color: -fx-primary-color;
+}
+.tab-pane .tab:selected {
+	-fx-background-color: -fx-secondary-color;
+	-fx-background-insets: 0 0 0 0;
+	-fx-background-radius: 0 0 0 0;
+}
+.tab .tab-label { 
+ 	-fx-alignment: CENTER;
+	-fx-font: normal 14px "Spot Mono";
+	-fx-text-fill: grey;
+	-fx-padding: 0 5 0 5;
+}
+.tab-pane:top .tab-header-area {
+	-fx-padding: 0 10 0 10;
+}
+.tab-pane {
+	-fx-background-color: linear-gradient(to bottom, rgb(185, 224, 255), rgb(239, 211, 255));
+	-fx-tab-min-width: 275px;
+	-fx-tab-min-height: 50px;
+	-fx-tab-max-height: 50px;
+}
+.tab-pane .tab {
+	-fx-background-color: transparent;
+	-fx-border-width: 0;
+	-fx-border-insets: 0 0 0 0;
+	-fx-border-radius: 0;
+}
+.tab-pane .tab:hover{
+	-fx-background-color: rgb(230, 243, 255);
+	-fx-border-width: 0;
+	-fx-border-insets: 0 0 0 0;
+	-fx-border-radius: 0;
+}
+.tab-pane .tab:hover .tab-label {
+	-fx-text-fill: rgb(119, 174, 220);
+}
+.tab-pane:focused .tab-header-area .headers-region .tab:selected .focus-indicator {
+ 	-fx-border-width: 0;
+	-fx-border-insets: 0 0 0 0;
+	-fx-border-radius: 0;
+}
+.label {
+	-fx-text-fill: grey;
+	-fx-font: normal 15px "Spot Mono";
+}
+.button {
+    -fx-background-color: white;
+    -fx-background-insets: 0 0 0 0;
+	-fx-background-radius: 5px;
+	-fx-font: normal 14px "Spot Mono";
+	-fx-text-fill: grey;
+}
+.button:hover {
+	-fx-background-color: rgb(214, 163, 244);
+    -fx-text-fill: white;
+}
+.text-area {
+	-fx-background-color: white;
+	-fx-font: normal 14px "Spot Mono";
+}
+.text-area .content {
+	-fx-background-color: white;
+	-fx-background-insets: 0;
+	-fx-background-radius: 5px;
+}
+.text-area:focused .content {
+	-fx-background-color: white;
+	-fx-background-insets: 0;
+	-fx-background-radius: 5px;
+}
+.text-field {
+	-fx-background-color: white;
+	-fx-font: normal 14px "Spot Mono";
+    -fx-background-insets: 0 0 0 0;
+	-fx-background-radius: 5px;
+}
+
+@keyframes icon {
+	from {
+	  opacity: 0;
+	  transform: scale(0.3);
+	}
+	to {
+	  opacity: 1;
+	  transform: scale(1)
+	}
+  }
+  
+  @keyframes check {
+	0% {
+	  width: 1.5em;
+	  height: 1.5em;
+	  border-width: 5px;
+	}
+	10% {
+	  width: 1.5em;
+	  height: 1.5em;
+	  opacity: 0.1;
+	  background: rgba(0,0,0,0.2);
+	  border-width: 15px;
+	}
+	12% {
+	  width: 1.5em;
+	  height: 1.5em;
+	  opacity: 0.4;
+	  background: rgba(0,0,0,0.1);
+	  border-width: 0;
+	}
+	50% {
+	  width: 2em;
+	  height: 2em;
+	  background: #00d478;
+	  border: 0;
+	  opacity: 0.6;
+	}
+	100% {
+	  width: 2em;
+	  height: 2em;
+	  background: #00d478;
+	  border: 0;
+	  opacity: 1;
+	}
+  }
+
